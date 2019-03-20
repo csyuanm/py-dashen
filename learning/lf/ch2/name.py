@@ -40,6 +40,21 @@ print('Languages:\n\tPython\n\tC\n\tJavaScript')   #字符串"\n\t"让Python换�
 print('Languages:\t\nPython\t\nC\t\nJavaScript')   #只能先换行再制表，顺序不能反！！！！！！
 
 
+#删除空白
+print('————————')
+
+favorite_language='Python  '
+print(favorite_language)
+print(favorite_language.rstrip())   #方法rstrip()删除末尾的空白；但这种删除只是暂时的。
+
+favorite_language='Python  '
+favorite_language=favorite_language.rstrip()
+print(favorite_language)    #要永久删除字符串中的空白，必须将删除操作的结果存回变量中。
+
+favorite_language='  Python  '
+print(favorite_language.rstrip())   #方法rstrip()删除字符串末尾的空白
+print(favorite_language.lstrip())   #方法lstrip()删除字符串开头的空白
+print(favorite_language.strip())    #方法strip()删除字符串两端的空白
 
 
 
