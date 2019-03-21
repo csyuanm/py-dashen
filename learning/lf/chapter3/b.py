@@ -1,3 +1,0 @@
-ssa 
-ass 
-d 
