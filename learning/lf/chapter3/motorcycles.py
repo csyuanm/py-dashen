@@ -85,6 +85,25 @@ first_owned = motorcycles.pop(0)    #弹出列表中的第一个元素并使用�
 print('The first motorcycle I owned was a ' + first_owned.title() + '.')
 
 
+#3.根据值删除元素【不知道要删除的值的位置，使用方法remove()进行删除】
+#使用该方法可使得删除元素后，能让你接着使用它
+#方法remove()只删除第一个指定的值
+
+motorcycles = ['honda','yamaha','suzuki','ducati']
+print(motorcycles)
+
+motorcycles.remove('ducati')     #使用方法remove()删除元素
+print(motorcycles)
+
+motorcycles = ['honda','yamaha','suzuki','ducati']   #定义列表内容
+print(motorcycles)
+
+too_expensive = 'ducati'    #将值'ducati'存储在变量too_expensive中
+motorcycles.remove(too_expensive)   #使用变量too_expensive来告诉Python将哪个值从列表中删除
+print(motorcycles)                  #值'ducati'从列表中删除
+print("\nA " + too_expensive.title() + " is too expensive for me.")   #但值'ducati'仍存储在变量too_expensive中
+
+
 
 
 
