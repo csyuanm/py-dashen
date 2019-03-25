@@ -1,6 +1,7 @@
 #coding=utf-8
 
 #3.3 组织列表
+#以下为所有字母均为小写的排序情况
 
 #3.3.1 使用方法sort()对列表进行永久性排序
 print('****************')
@@ -34,7 +35,22 @@ print(sorted(cars))     #再按特定书顺序显示列表
 print("\nHere is the original list again:")
 print(cars)             #列表元素的排列顺序与以前相同
 
-ss = sorted(cars)
-print(ss)
+print(sorted(cars, reverse=True))    #按照与字母顺序相反的顺序显示列表
+
+
+#3.3.3 倒着打印列表【使用方法reverse()】
+#方法reverse()永久性修改列表元素的排列顺序，但对列表再次使用方法reverse()可恢复到原来的排序顺序
+cars = ['bmw','audi','toyota','subaru']
+print(cars)
+
+cars.reverse()   #反转列表元素的排列顺序
+print(cars)
+
+
+#3.3.4 确定列表的长度
+cars = ['bmw','audi','toyota','subaru']
+print(len(cars))
+
+
 
 

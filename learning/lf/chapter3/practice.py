@@ -61,5 +61,27 @@ del guests[0]    #注意：这里不能del guests[1]，因为前面一个删除�
 print(guests)
 
 
+#3-8 放眼世界
+places = ['tokyo','beijing','nanjing','canada']
+print(places)
 
+print(sorted(places))
+print(places)
+print(sorted(places,reverse=True))
+print(places)
+
+places.reverse()
+print(places)
+places.reverse()
+print(places)
+
+places.sort()
+print(places)
+
+places.sort(reverse=True)
+print(places)
+
+#3-9 晚餐嘉宾
+guests = ['Jack','Alice','Susan']
+print(len(guests))
 
