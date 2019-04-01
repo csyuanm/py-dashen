@@ -51,6 +51,7 @@ if requested_topping != 'anchovies':
 
 
 #5.2.4 比较数字
+#条件语句中可包含各种数学比较，比如<, <=, >, >=
 
 answer = 17
 if answer != 42:
