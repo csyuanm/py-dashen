@@ -42,7 +42,7 @@ print('#5.2 条件测试')
 
 
 #5.2.3 检查是否不相等
-#要判断两个值是否不相等，课结合使用表示“不等”的“！=”
+#要判断两个值是否不相等，可结合使用表示“不等”的“！=”
 
 requested_topping = 'mushrooms'
 
@@ -56,6 +56,55 @@ if requested_topping != 'anchovies':
 answer = 17
 if answer != 42:
     print("That is not the correct answer. Please Try again!")
+
+
+#5.2.5 检查多个条件（关键字and和or）
+#1.使用and检查多个条件（要检查两个条件是否都为True，可用and)
+
+#age_0 = 22
+#age_1 = 18
+#age_0 >= 21 and age_1 >= 21
+#False
+
+#age_0 = 22
+#age_1 = 22
+#age_0 >= 21 and age_1 >= 21
+#True
+
+#或：（age_0 = 21）and (age_1 = 21)
+
+#2.使用or检查多个条件（至少一个条件满足则为Tru；两个条件都不满足则为False)
+
+#age_0 = 22
+#age_1 = 18
+#age_0 >= 21 or age_1 >= 21
+#True
+
+#age_0 = 18
+#age_0 >= 21 0r age_1 >= 21
+#False
+
+
+#5.2.6 检查特定值是否在列表中
+
+#requested_toppings = ['mushrooms','onions','pineapple']
+#'mushrooms' in requested_toppings
+#True
+
+#'pepperoni' in requested_toppings
+#False
+
+#5.2.7 检查特定值是否不在列表中（关键字not in)
+
+banned_users = ['andrew','carolina','david']
+user = 'marie'
+if user not in banned_users:
+    print(user.title() + ", you can post a response if you wish.")
+
+
+#5.2.8 布尔表达式（条件测试的别名）
+
+
 
 
 
