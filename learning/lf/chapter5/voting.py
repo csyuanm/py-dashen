@@ -34,6 +34,7 @@ else:
 
 
 #5.3.3 if-elif-else结构（检查超过两个的情况）
+#仅适用于只有一个条件满足的情况
 
 #Python只执行结构中的一个代码块，它一次检查每个条件测试，直到遇到通过了的条件测试。
 #测试通过后，执行紧跟在它后面的代码，并跳过余下的测试。
@@ -59,7 +60,48 @@ else:
 print("Your admission cost is $" + str(price) + ".")
 
 
+#5.3.4 使用多个elif板块（可根据需要使用任意数量的elif板块）
 
+age= 12
+
+if age < 4:
+    price = 0
+elif age < 18:
+    price = 5
+elif age < 65:
+    price = 10    
+else:
+    price = 5
+
+print("Your admission cost is $" + str(price) + ".")
+
+
+#5.3.5 省略else代码块
+
+if age < 4:
+    price = 0
+elif age < 18:
+    price = 5
+elif age < 65:
+    price = 10  
+elif age >= 65:
+    price = 5 
+
+print("Your admission cost is $" + str(price) + ".")
+
+
+#5.3.6 测试多个条件
+
+requested_toppings = ['mushrooms','extra cheese']
+
+if 'mushrooms' in requested_toppings:
+    print("Adding mushrooms.")
+if 'pepproni' in requested_toppings:
+    print('Adding pepperoni.')
+if 'extra cheese' in requested_toppings:
+    print('Adding extra cheese.')
+
+print("\nFinished making your pizza!")
 
 
 
