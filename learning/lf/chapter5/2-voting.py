@@ -92,13 +92,13 @@ print("Your admission cost is $" + str(price) + ".")
 
 #5.3.6 测试多个条件
 
-requested_toppings = ['mushrooms','extra cheese']
+requested_toppings = ['mushrooms','extra cheese'] #三个if测试独立存在
 
-if 'mushrooms' in requested_toppings:
+if 'mushrooms' in requested_toppings:  #检查顾客是否点了“mushrooms”
     print("Adding mushrooms.")
-if 'pepproni' in requested_toppings:
+if 'pepproni' in requested_toppings:   #不管前一个测试是否通过，都将进行这个测试
     print('Adding pepperoni.')
-if 'extra cheese' in requested_toppings:
+if 'extra cheese' in requested_toppings:  #不管前两个测试的结果如何，都将进行这个测试
     print('Adding extra cheese.')
 
 print("\nFinished making your pizza!")
