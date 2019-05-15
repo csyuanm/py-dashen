@@ -5,22 +5,17 @@
 print('****************')
 print('7.2.4 使用break退出循环')
 
-prompt = "Please input your ID:"
+prompt = "\nPlease enter yhe name of a city you have visited:"
+prompt += "\n(Enter 'quit' when you are finished.)"
 
+while True:
+    city = input(prompt)
+    
+    if city == 'quit':
+        break
+    else:
+        print("I'd love to go to " + city.title() + "!")
 
-flag=True
-name = ''
-while flag:
-    name = input(prompt)
-    
-    m=int(input(prompt+"2=mmmmmmmmmmmmmm"))
-    n=int(input(prompt+"nnnnnnnnnnnnnnnnnnS"))
-    l=m+n
-    print(name)
-    print(l)
-    
-    if name == str(l):
-        flag = False
     
     
     
